@@ -22,11 +22,6 @@ for (c = 'A' ; c <= 'Z' ; c++)
 {
 putchar(c);
 }
-c = '$';
-for (i = 0 ; i < 2 ; i++)
-{
-putchar(c);
-c = '\n';
-}
+putchar('\n');
 return (0);
 }
