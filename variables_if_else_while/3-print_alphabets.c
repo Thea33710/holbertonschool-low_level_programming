@@ -12,7 +12,7 @@
 int main(void)
 {
 char c;
-int i;
+
 
 for (c = 'a' ; c <= 'z' ; c++)
 {
