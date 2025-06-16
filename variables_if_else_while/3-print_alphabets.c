@@ -12,12 +12,21 @@
 int main(void)
 {
 char c;
+int i;
 
-for (c = 'a' ; c <= 'Z' ; c++)
+for (c = 'a' ; c <= 'z' ; c++)
 {
 putchar(c);
 }
-putchar('$');
-putchar('\n');
+for (c = 'A' ; c <= 'Z' ; c++)
+{
+putchar(c);
+}
+c = '$';
+for (i = 0 ; i < 2 ; i++)
+{
+putchar(c);
+c = '\n';
+}
 return (0);
 }
