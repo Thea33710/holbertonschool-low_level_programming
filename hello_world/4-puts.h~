@@ -1,0 +1,6 @@
+#ifndef _4-PUTS_H_
+#define _4-PUTS_H_
+
+void main ();
+
+#endif
