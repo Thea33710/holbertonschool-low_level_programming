@@ -16,7 +16,7 @@ if (c >= 97 && c <= 122)
 {
 _putchar('1');
 }
-else if
+ else if (c < 97 && c > 122)
 {
 _putchar('0');
 }
