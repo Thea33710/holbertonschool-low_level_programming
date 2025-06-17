@@ -20,5 +20,6 @@ if (n < 0)
 {
 ld = ((-n) % 10);
 }
+_putchar(ld + '0');
 return (ld);
 }
