@@ -1,0 +1,36 @@
+#include "main.h"
+
+/**
+ * jack_bauer - Entry point
+ *
+ * Description: print 00:00 to 23:59
+ * parameter: void
+ *
+ * Return: Always 0 (Success)
+ */
+
+void jack_bauer(void)
+{
+int i;
+int j;
+int k;
+int l;
+
+for (i = 0; i < 3; i++)
+{
+_putchar(i);
+for (j = 0; j < 4; j++)
+{
+_putchar(j);
+_putchar(':');
+for (k = 0; k < 6; k++)
+{
+_putchar(k);
+for (l = 0; l <= 9; j++)
+{
+_putchar(l);
+}
+}
+}
+}
+}
