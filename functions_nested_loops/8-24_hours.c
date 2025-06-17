@@ -19,7 +19,7 @@ for (heure = 0; heure <= 23; heure++)
 for (minute = 0; minute <= 59; minute++)
 {
 _putchar((heure / 10) + '0');
-_putchar((heur % 10) + '0');
+_putchar((heure % 10) + '0');
 _putchar(':');
 _putchar((minute / 10) + '0');
 _putchar((minute % 10) + '0');
