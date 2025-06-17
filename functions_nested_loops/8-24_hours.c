@@ -26,7 +26,7 @@ for (l = 0; l <= 9; l++)
 {
 _putchar(i);
 _putchar(j);
-_putachar(':');
+_putchar(':');
 _putchar(k);
 _putchar(l);
 }
@@ -43,7 +43,7 @@ for (l = 0; l <= 9; l++)
 {
 _putchar(i);
 _putchar(j);
-_putachar(':');
+_putchar(':');
 _putchar(k);
 _putchar(l);
 }
