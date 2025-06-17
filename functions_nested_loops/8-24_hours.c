@@ -16,14 +16,14 @@ int j;
 int k;
 int l;
 
-for (i = 0; i < 3; i++)
+for (i = 0; i <= 2; i++)
 {
 _putchar(i);
-for (j = 0; j < 4; j++)
+for (j = 0; j <= 3; j++)
 {
 _putchar(j);
 _putchar(':');
-for (k = 0; k < 6; k++)
+for (k = 0; k <= 5; k++)
 {
 _putchar(k);
 for (l = 0; l <= 9; j++)
