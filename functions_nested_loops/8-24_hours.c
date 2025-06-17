@@ -18,16 +18,16 @@ int l;
 
 for (i = 0; i <= 1; i++)
 {
-_putchar(i);
 for (j = 0; j <= 9; j++)
 {
-_putchar(j);
-_putchar(':');
 for (k = 0; k <= 5; k++)
 {
-_putchar(k);
 for (l = 0; l <= 9; l++)
 {
+_putchar(i);
+_putchar(j);
+_putachar(':');
+_putchar(k);
 _putchar(l);
 }
 }
@@ -35,16 +35,16 @@ _putchar(l);
 }
 for (i = 2; i <= 2; i++)
 {
-_putchar(i);
 for (j = 0; j <= 3; j++)
 {
-_putchar(j);
-_putchar(':');
 for (k = 0; k <= 5; k++)
 {
-_putchar(k);
 for (l = 0; l <= 9; l++)
 {
+_putchar(i);
+_putchar(j);
+_putachar(':');
+_putchar(k);
 _putchar(l);
 }
 }
