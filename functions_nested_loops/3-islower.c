@@ -12,11 +12,13 @@
 
 int _islower(int c)
 {
-if (c >= 97 && c <= 122)
+char u;
+u = c;
+if (u >= 97 && u <= 122)
 {
 _putchar('1');
 }
-if (c < 97 && c > 122)
+if (u < 97 && u > 122)
 {
 _putchar('0');
 }
