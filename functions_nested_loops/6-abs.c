@@ -18,7 +18,6 @@ return (n);
 }
 else
 {
-_putchar('-');
-return (n);
+return (-n);
 }
 }
