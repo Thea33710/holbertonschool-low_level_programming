@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Description: list and add the mutliples of 3 or 5 below 1024
+ * parameter: void
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
+{
+int i;
+int j = 0;
+int k = 0;
+int u = 0;
+
+for (i = 0; i < 1024; i++)
+{
+j = i * 3;
+k = i * 5;
+if (j != k)
+{
+u = u + j + k;
+}
+if (j == k)
+{
+u = u + j;
+}
+}
+printf("%d\n", u);
+return (0);
+}
