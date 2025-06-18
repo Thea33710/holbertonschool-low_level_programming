@@ -13,18 +13,18 @@ int main(void)
 unsigned long j = 1;
 unsigned long k = 2;
 unsigned long u = 0;
+unsigned long l = 0;
 
-printf("%lu, %lu", j, k);
-while (u < 4000000)
+while (l < 4000000)
 {
 u = j + k;
-if (u < 4000000)
-{
-printf(", %lu", u);
 j = k;
 k = u;
+if (u % 2 == 0)
+{
+l += u;
 }
 }
-printf("\n");
+printf("%lu\n", l);
 return (0);
 }
