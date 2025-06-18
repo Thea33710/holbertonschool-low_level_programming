@@ -15,7 +15,7 @@ unsigned long j = 1;
 unsigned long k = 2;
 
 printf("%lu, %lu", j, k);
-for (i = 2; i < 98; i++)
+for (i = 2; i < 48; i++)
 {
 j += k;
 k += j;
