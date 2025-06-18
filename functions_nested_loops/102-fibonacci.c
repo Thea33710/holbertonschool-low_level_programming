@@ -11,15 +11,15 @@
 int main(void)
 {
 int i;
-unsigned long long j = 1;
-unsigned long long k = 2;
+unsigned long j = 1;
+unsigned long k = 2;
 
-printf("%lld, %lld", j, k);
+printf("%lu, %lu", j, k);
 for (i = 0; i < 24; i++)
 {
 j += k;
 k += j;
-printf(", %lld, %lld", j, k);
+printf(", %lu, %lu", j, k);
 }
 printf("\n");
 return (0);
