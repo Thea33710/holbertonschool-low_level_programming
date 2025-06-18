@@ -11,8 +11,8 @@
 int main(void)
 {
 int i;
-int j = 1;
-int k = 2;
+unsigned int j = 1;
+unsigned int k = 2;
 
 printf("%d, %d", j, k);
 for (i = 0; i < 24; i++)
