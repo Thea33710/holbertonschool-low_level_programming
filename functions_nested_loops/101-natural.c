@@ -13,22 +13,14 @@ int main(void)
 {
 int i;
 int j = 0;
-int k = 0;
-int u = 0;
 
 for (i = 0; i < 1024; i++)
 {
-j = i * 3;
-k = i * 5;
-if (j != k)
+if ((i % 3) == 0 || (i % 5) == 0)
 {
-u = u + j + k;
-}
-if (j == k)
-{
-u = u + j;
+j += i;
 }
 }
-printf("%d\n", u);
+printf("%d\n", j);
 return (0);
 }
