@@ -13,7 +13,7 @@ int main(void)
 unsigned long j = 1;
 unsigned long k = 2;
 unsigned long u = 0;
-unsigned long l = 0;
+unsigned long l = 2;
 
 while (l < 4000000)
 {
