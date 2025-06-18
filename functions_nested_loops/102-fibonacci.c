@@ -14,12 +14,12 @@ int i;
 unsigned long long j = 1;
 unsigned long long k = 2;
 
-printf("%d, %d", j, k);
+printf("%lld, %lld", j, k);
 for (i = 0; i < 24; i++)
 {
 j += k;
 k += j;
-printf(", %d, %d", j, k);
+printf(", %lld, %lld", j, k);
 }
 printf("\n");
 return (0);
