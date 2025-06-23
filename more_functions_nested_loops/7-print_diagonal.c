@@ -23,7 +23,7 @@ _putchar('\\');
 _putchar('\n');
 i++;
 j = 0;
-while (j < i)
+while (j < i && i != n)
 {
 _putchar(' ');
 j++;
