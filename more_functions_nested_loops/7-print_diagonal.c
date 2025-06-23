@@ -21,6 +21,7 @@ for (i = 0; i < n;)
 {
 _putchar('\\');
 _putchar('\n');
+_putchar(' ');
 i++;
 j = 0;
 while (j <= i)
