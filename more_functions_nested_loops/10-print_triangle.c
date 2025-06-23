@@ -18,7 +18,7 @@ _putchar('\n');
 }
 for (i = size; i > 0; i--)
 {
-j = 0;
+j = 1;
 while (j < i)
 {
 _putchar(' ');
