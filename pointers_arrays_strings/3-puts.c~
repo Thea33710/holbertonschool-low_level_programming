@@ -1,0 +1,22 @@
+#include "main.h"
+
+/**
+ * _puts - Entry point
+ *
+ * Description: write
+ * @str: string
+ *
+ * Return: Always 0 (Success)
+ */
+
+void _puts(char *str)
+{
+char c;
+while (*str != '\0')
+{
+c = str;
+_putchar(c);
+str++;
+}
+_putchar('\n');
+}
