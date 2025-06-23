@@ -1,0 +1,19 @@
+#include "main.h"
+
+/**
+ * swap_int - Entry point
+ *
+ * Description: 'the program's description'
+ * @a: un nombre
+ * @b: un nombre
+ *
+ * Return: Always 0 (Success)
+ */
+
+void swap_int(int *a, int *b)
+{
+  int x;
+  x = *a;
+  *b = *a;
+  *a = x;
+}
