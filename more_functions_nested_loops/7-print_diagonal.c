@@ -28,5 +28,5 @@ while (j < i && i != n)
 _putchar(' ');
 j++;
 }
-} 
+}
 }
