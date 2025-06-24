@@ -11,13 +11,18 @@
 
 void rev_string(char *s)
 {
+char *r = s;
 char c;
-int i;
-for (i = *s; i >= 0; i--)
+while (*r != '\0')
 {
-c = *s;
+r++;
+}
+r--;
+while (r >= s)
+{
+c = *r;
 _putchar(c);
-*s--;
+r--;
 }
 _putchar('\n');
 }
