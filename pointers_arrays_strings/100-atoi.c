@@ -2,32 +2,35 @@
 
 /**
  * _atoi - Entry point
+ * @s: a string
  *
- * Description: 'the program's description'
- * @s: char
- *
- * Return: Always 0 (Success)
+ * Return: The integer converted from the string
  */
 
 int _atoi(char *s)
 {
-char c, k;
-
-while (*s != '\0')
+int c = 0;
+unsigned int j = 0;
+int k = 1;
+int p = 0;
+while (s[c])
 {
-if (*s == '-' || *s == '+')
+if (s[c] == 45)
 {
-c = *s;
+k *= -1;
 }
-_putchar(c);
-if (*s >= '0'  && *s <= '9')
+while (s[c] >= 48 && s[c] <= 57)
 {
-k = *s;
-_putchar(k + '0');
+p = 1;
+j = (j * 10) + (s[c] - '0');
+c++;
 }
-s++;
+if (p == 1)
+{
+break;
 }
-_putchar('\n');
-return (0);
+c++;
 }
-
+j *= k;
+return (j);
+}
