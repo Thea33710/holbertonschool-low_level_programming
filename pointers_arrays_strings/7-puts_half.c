@@ -20,6 +20,7 @@ while (*copy != '\0')
 copy++;
 i++;
 }
+i++;
 while (*str != '\0')
 {
 if (j >= (i / 2))
