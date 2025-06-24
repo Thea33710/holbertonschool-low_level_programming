@@ -11,19 +11,18 @@
 
 void print_rev(char *s)
 {
-int i = 0;
-int j;
+char *r = s;
 char c;
-while (*s != '\0')
+while (*r != '\0')
 {
-i++;
-s++;
+r++;
 }
-for (j = 0; j <= i; j++)
+r--;
+while ( r >= s)
 {
-c = *s;
+c = *r;
 _putchar(c);
-s--;
+r--;
 }
 _putchar('\n');
 }
