@@ -18,7 +18,7 @@ while (*r != '\0')
 r++;
 }
 r--;
-while ( r >= s)
+while (r >= s)
 {
 c = *r;
 _putchar(c);
