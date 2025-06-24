@@ -18,11 +18,12 @@ while (*r != '\0')
 r++;
 }
 r--;
-while (r >= s)
+while (s < r)
 {
-c = *r;
-_putchar(c);
+c = *s;
+*s = *r;
+*r = c;
+s++;
 r--;
 }
-_putchar('\n');
 }
