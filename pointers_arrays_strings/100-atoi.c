@@ -35,6 +35,7 @@ if (*s >= '0' && *s <= '9')
 k = *s;
 _putchar(k + '0');
 }
+s++;
 }
 _putchar('\n');
 return (0);
