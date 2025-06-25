@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * reverse-array - Entry point
+ * reverse_array - Entry point
  *
  * Description: reverse array
  * @a: number
@@ -12,13 +12,13 @@
 
 void reverse_array(int *a, int n)
 {
-int i = 0, k , l;
+int i = 0, k, l;
 while (i < n)
 {
 k = a[i];
-l = a[n-1];
+l = a[n - 1];
 a[i] = l;
-a[n-1] = k;
+a[n - 1] = k;
 i++;
 n--;
 }
