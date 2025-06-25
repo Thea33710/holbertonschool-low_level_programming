@@ -1,0 +1,25 @@
+#include "main.h"
+
+/**
+ * reverse-array - Entry point
+ *
+ * Description: reverse array
+ * @a: number
+ * @n: number
+ *
+ * Return: Always 0 (Success)
+ */
+
+void reverse_array(int *a, int n)
+{
+  int i = 0, k , l;
+  while (i < n)
+    {
+      k = a[i];
+      l = a[n-1];
+      a[i] = l;
+      a[n-1] = k;
+      i++;
+      n--;
+    }
+}
