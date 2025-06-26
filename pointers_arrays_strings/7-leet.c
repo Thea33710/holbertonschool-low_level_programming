@@ -12,28 +12,20 @@
 char *leet(char *s)
 {
 int i;
-for (i = 0; s[i] != '\0'; i++)
+char *c = s;
+char a[] = {'a', 'e', 'o', 't', 'l'};
+char b[] = {4, 3, 0, 7, 1};
+
+while (*s)
 {
-if (s[i] == 'a' || s[i] == 'A')
+for (i = 0; i < 5; i++)
 {
-s[i] = 4;
-}
-else if (s[i] == 'e' || s[i] == 'E')
+if (*s == a[i] || *s == a[i] - 32)
 {
-s[i] = 3;
-}
-else if (s[i] == 'o' || s[i] == 'O')
-{
-s[i] = 0;
-}
-else if (s[i] == 't' || s[i] == 'T')
-{
-s[i] = 7;
-}
-else if (s[i] == 'l' || s[i] == 'L')
-{
-s[i] = 1;
+*s =  b[i] + '0';
 }
 }
-return (s);
+s++;
+}
+return (c);
 }
