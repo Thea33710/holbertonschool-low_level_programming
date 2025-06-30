@@ -4,7 +4,6 @@
 /**
  * *_strstr - Entry point
  *
- * Description: strstr
  * @haystack: string
  * @needle: string
  *
