@@ -3,7 +3,6 @@
 /**
  * _memset - Entry point
  *
- * Description: memset
  * @s: string
  * @b: char
  * @n: nombre positif
