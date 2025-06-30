@@ -4,7 +4,6 @@
 /**
  * *_strpbrk - Entry point
  *
- * Description: strpbrk
  * @s: string
  * @accept: string
  *
