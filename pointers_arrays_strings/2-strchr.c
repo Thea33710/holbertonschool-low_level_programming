@@ -3,7 +3,6 @@
 /**
  * *_strchr - Entry point
  *
- * Description: strchr
  * @s: string
  * @c: char
  *
