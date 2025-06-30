@@ -3,7 +3,6 @@
 /**
  * _strspn - Entry point
  *
- * Description: strspn
  * @s: string
  * @accept: string
  *

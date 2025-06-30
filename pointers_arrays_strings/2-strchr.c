@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * *_strchr - Entry point
@@ -19,5 +20,9 @@ return (s);
 }
 s++;
 }
-return (0);
+if (c == '\0')
+{
+return (s);
+}
+return (NULL);
 }
