@@ -1,0 +1,30 @@
+#include "main.h"
+#include <stddef.h>
+
+/**
+ * *_strpbrk - Entry point
+ *
+ * Description: strpbrk
+ * @s: string
+ * @accept: string
+ *
+ * Return: Always 0 (Success)
+ */
+
+char *_strpbrk(char *s, char *accept)
+{
+while (*s != '\0')
+{
+char *c = accept;
+while (*c != '\0')
+{
+if (*s == *c)
+{
+return (s);
+}
+c++;
+}
+s++;
+}
+return (NULL);
+}
