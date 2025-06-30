@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_memset - Entry point
+ * _memset - Entry point
  *
  * Description: memset
  * @s: string
