@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+
+/**
+ * main - Entry point
+ *
+ * @argc: count arguments
+ * @argv: array of pointer
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main(int argc, char *argv[])
+{
+while (argc--)
+printf("%s\n", *argv++);
+return (0);
+}
