@@ -1,0 +1,43 @@
+#include "main.h"
+
+
+/**
+ * _helper - Entry point
+ *
+ * @i: entier
+ * @n: un entier
+ *
+ * Return: Always 0 (Success)
+ */
+
+int _helper(int i, int n)
+{
+if (n % i == 0)
+{
+return (0);
+}
+else if (n % i != 0 && i < n)
+{
+return (1);
+}
+else
+return (_helper(i + 1, n));
+}
+
+
+/**
+ * is_prime_number - Entry point
+ *
+ * @n: number
+ *
+ * Return: Always 0 (Success)
+ */
+
+int is_prime_number(int n)
+{
+if (n <= 1)
+{
+return (0);
+}
+return (_helper(2, n));
+}
