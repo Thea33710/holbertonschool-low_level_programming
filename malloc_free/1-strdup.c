@@ -72,6 +72,6 @@ char *_strdup(char *str)
 			return (NULL);
 		}
 
-	*_strcpy(copie, str);
+	_strcpy(copie, str);
 	return (copie);
 }

@@ -106,8 +106,8 @@ char *str_concat(char *s1, char *s2)
 			return (NULL);
 		}
 
-	*_strcpy(copie, s1);
-	*_strcat(copie, s2);
+	_strcpy(copie, s1);
+	_strcat(copie, s2);
 
 	return (copie);
 }
