@@ -19,16 +19,16 @@ char *str_concat(char *s1, char *s2)
 
 		if (s2 == NULL)
 		{
-			*s2 = "";
+			s2 = "";
 		}
 
 		if (s1 == NULL)
 		{
-			*s1 = "";
+			s1 = "";
 		}
 
 	taille = strlen(s1) + strlen(s2) + 1;
-	copie = malloc(sizeof(char) * taille);
+	*copie = malloc(sizeof(char) * taille);
 
 		if (copie == NULL)
 		{
