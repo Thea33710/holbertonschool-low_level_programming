@@ -22,14 +22,13 @@ int *array_range(int min, int max)
 			return (NULL);
 		}
 
-		while (j < max)
-		{
-			j++;
-			k++;
-		}
-
-	j = min;
+	k = max - min + 1;
 	arr = malloc(sizeof(int) * k);
+
+		if (arr == NULL)
+		{
+			return (NULL);
+		}
 
 		for (i = 0; i < k; i++)
 		{
