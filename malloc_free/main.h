@@ -12,5 +12,6 @@ char *_strcat(char *dest, char *src);
 char *argstostr(int ac, char **av);
 char **strtow(char *str);
 int _taille(int ac, char **av);
+char *_memcpy(char *dest, char *src, unsigned int n);
 
 #endif
