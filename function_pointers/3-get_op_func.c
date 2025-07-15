@@ -27,16 +27,11 @@ int (*get_op_func(char *s))(int, int)
 		return (NULL);
 	}
 
-	while (ops[i].op != NULL)
+	while (s != NULL && ops[i].op != NULL)
 	{
-		j = 1;
+		j = !(ops[i].op[0] != s[0] || ops[i].op[1] != '\0' || s[1] != '\0');
 
-		if (ops[i].op[0] != s[0] || ops[i].op[1] != '\0' || s[1] != '\0')
-		{
-			j = 0;
-		}
-
-		if (j == 1)
+		if (j)
 		{
 			return (ops[i].f);
 		}
