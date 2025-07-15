@@ -12,7 +12,8 @@
 
 int main(int argc, char *argv[])
 {
-	op_t op;
+	int num1, num2, calc;
+	char *operator;
 
 	if (argc != 4)
 	{
@@ -20,14 +21,18 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	op.f = get_op_func(argv[2]);
+	operator = argv[2];
 
-	if (!op.f)
+	if (!operator)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	printf("%d\n", op.f(atoi(argv[1]), atoi(argv[3])));
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	calc = get_op_func(operator)(num1, num2);
+
+	printf("%d\n", calc);
 	return (0);
 }
