@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
+	operator = argv[2];
 	if (!operator || operator[1] != '\0')
 	{
 		printf("Error\n");
