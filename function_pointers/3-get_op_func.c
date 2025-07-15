@@ -1,7 +1,29 @@
 #include "3-calc.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
+#include <stddef.h>
+
+/**
+ * _strcmp - Entry point
+ *
+ * Description: compare 2 string
+ * @s1: string
+ * @s2: string
+ *
+ * Return: Always 0 (Success)
+ */
+
+int _strcmp(char *s1, char *s2)
+{
+int i, k;
+for (i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
+{
+k = s1[i] - s2[i];
+if (k != 0)
+{
+return (k);
+}
+}
+return (k);
+}
 
 /**
  * get_op_func - Entry point
@@ -29,7 +51,7 @@ int (*get_op_func(char *s))(int, int)
 		return (NULL);
 	}
 
-	while (ops[i].op < 5 && ops[i].op != s)
+	while (ops[i].op != NULL && _strcmp(ops[i].op, s) != 0)
 	{
 		i++;
 	}

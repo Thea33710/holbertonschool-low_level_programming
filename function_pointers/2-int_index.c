@@ -1,6 +1,4 @@
 #include "function_pointers.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * int_index - Entry point
@@ -8,32 +6,24 @@
  * @size: taille
  * @cmp: un pointeur vers une fonction
  *
- * Return: Always 0 (Success)
+ * Return: l'index du premier élément correspondant, ou -1 si aucun ou erreur
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i, j;
+	int i;
 
-	if (array == NULL || cmp == NULL)
-	{
-		return;
-	}
-
-	if (size <= 0)
+	if (array == NULL || cmp == NULL || size <= 0)
 	{
 		return (-1);
 	}
 
 	for (i = 0; i < size; i++)
 	{
-		j = cmp(array[i]);
-
-		if (j == 1)
+		if (cmp(array[i]) != 0)
 		{
 			return (i);
 		}
 	}
-
 	return (-1);
 }
