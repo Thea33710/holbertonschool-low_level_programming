@@ -13,7 +13,7 @@
 int main(int argc, char **argv)
 {
 
-int i, arg_1, arg_2, signe;
+int i, arg_1, arg_2;
 int (*op_func)(int, int);
 
 	if (argc != 4)
