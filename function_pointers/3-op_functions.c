@@ -1,6 +1,7 @@
 #include "3-calc.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  * op_add - Entry point
@@ -53,7 +54,7 @@ int op_div(int a, int b)
 {
 	if (b == 0)
 	{
-		printf("Error\n");
+		write(1, "Error\n", 6);
 		exit(100);
 	}
 
@@ -72,7 +73,7 @@ int op_mod(int a, int b)
 {
 	if (b == 0)
 	{
-		printf("Error\n");
+		write(1, "Error\n", 6);
 		exit(100);
 	}
 
