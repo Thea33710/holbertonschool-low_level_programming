@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 
 /**
- * print_name - Entry point
+ * print_name - Prints a name
  * @name: un nom
  * @f: pointeur vers une fonction
  *
@@ -10,5 +10,8 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	f(name);
+	if (name != NULL && f != NULL)
+	{
+		f(name);
+	}
 }
