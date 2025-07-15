@@ -20,12 +20,10 @@ int (*get_op_func(char *s))(int, int)
 	};
 
 	int i = 0;
-	int j;
 
 	while (ops[i].op != NULL)
 	{
-		j = (ops[i].op[0] == s[0] && ops[i].op[1] == '\0' && s[1] == '\0');
-		if (j)
+		if (ops[i].op[0] == s[0] && ops[i].op[1] == '\0' && s[1] == '\0')
 		{
 			return (ops[i].f);
 		}
