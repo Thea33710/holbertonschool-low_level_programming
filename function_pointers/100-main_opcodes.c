@@ -2,17 +2,6 @@
 #include <stdlib.h>
 
 /**
- * main_function_start - Entry point
- *
- * Return: Always 0 (Success)
- */
-
-void main_function_start(void)
-{
-
-}
-
-/**
  * main - Entry point
  *
  * @argc: count arguments
@@ -39,7 +28,7 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	unsigned char *ptr = (unsigned char *) &main_function_start;
+	unsigned char *ptr = (unsigned char *) &main;
 
 	for (i = 0; i < number_of_bytes; i++)
 	{
