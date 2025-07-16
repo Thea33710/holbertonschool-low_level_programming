@@ -22,7 +22,7 @@ void main_function_start(void)
  * Return: Always 0 (Success)
  */
 
-int main(int argc, char *argv[])
+void main(int argc, char *argv[])
 {
 	int i;
 
@@ -53,5 +53,4 @@ int main(int argc, char *argv[])
 	}
 
 	printf("\n");
-	return (0);
 }
