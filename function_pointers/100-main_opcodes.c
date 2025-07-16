@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "function_pointers.h"
 
 /**
  * main_function_start - Entry point
@@ -22,7 +21,7 @@ void main_function_start(void)
  * Return: Always 0 (Success)
  */
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 
@@ -53,4 +52,5 @@ void main(int argc, char *argv[])
 	}
 
 	printf("\n");
+	return (0);
 }
