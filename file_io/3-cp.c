@@ -66,8 +66,8 @@ int main(int argc, char *argv[])
 		erreur_exit(98, "Error: Can't read from file %s\n", argv[1]);
 	}
 	if (close(fd_from) == -1)
-		erreur_exit(100, "Error: Can't close fd %d\n", argv[1]);
+		erreur_exit(100, "Error: Can't close fd %d\n", fd_from);
 	if (close(fd_to) == -1)
-		erreur_exit(100, "Error: Can't close fd %d\n", argv[2]);
+		erreur_exit(100, "Error: Can't close fd %d\n", fd_to);
 	return (0);
 }
