@@ -4,7 +4,6 @@
 #include <unistd.h>
 #include <errno.h>
 #include <sys/stat.h>
-#include "main.h"
 
 #define BUFFER_SIZE 1024
 
@@ -43,10 +42,8 @@ int main(int argc, char *argv[])
 
 	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd_to == -1)
-	{
-		close(fd_from);
-		erreur_exit(99, "Error: Can't write to %s\n", argv[2]);
-	}
+		(close(fd_from), erreur_exit(99, "Error: Can't write to %s\n", argv[2]));
+
 	while ((bytes_r = read(fd_from, buffer, BUFFER_SIZE)) > 0)
 	{
 		bytes_w = write(fd_to, buffer, bytes_r);
@@ -56,7 +53,7 @@ int main(int argc, char *argv[])
 			erreur_exit(99, "Error: Can't write to %s\n", argv[2]);
 		}
 	}
-	if (bytes_r == -1)
+	if (bytes_r < 0)
 	{
 		(close(fd_from), close(fd_to));
 		erreur_exit(98, "Error: Can't read from file %s\n", argv[1]);
