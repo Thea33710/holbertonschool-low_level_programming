@@ -46,6 +46,11 @@ int main(int argc, char *argv[])
 
 	while ((bytes_r = read(fd_from, buffer, BUFFER_SIZE)) > 0)
 	{
+		if (bytes_r < 0)
+	{
+		(close(fd_from), close(fd_to));
+		erreur_exit(98, "Error: Can't read from file %s\n", argv[1]);
+	}
 		bytes_w = write(fd_to, buffer, bytes_r);
 		if (bytes_w != bytes_r)
 		{
@@ -55,14 +60,12 @@ int main(int argc, char *argv[])
 	}
 	if (bytes_r < 0)
 	{
-		(close(fd_from), close(fd_to));
+		close(fd_from), close(fd_to);
 		erreur_exit(98, "Error: Can't read from file %s\n", argv[1]);
 	}
 	if (close(fd_from) == -1)
 		(dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from), exit(100));
-
 	if (close(fd_to) == -1)
 		(dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to), exit(100));
-
 	return (0);
 }
