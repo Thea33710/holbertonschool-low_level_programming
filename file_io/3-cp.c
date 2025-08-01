@@ -44,8 +44,12 @@ int main(int argc, char *argv[])
 	if (fd_to == -1)
 		(close(fd_from), erreur_exit(99, "Error: Can't write to %s\n", argv[2]));
 
-	while ((bytes_r = read(fd_from, buffer, BUFFER_SIZE)) > 0)
+	while (1)
 	{
+		bytes_r = read(fd_from, buffer, BUFFER_SIZE);
+		if (bytes_r == 0)
+			break;
+
 		if (bytes_r < 0)
 	{
 		(close(fd_from), close(fd_to));
@@ -57,11 +61,6 @@ int main(int argc, char *argv[])
 			(close(fd_from), close(fd_to));
 			erreur_exit(99, "Error: Can't write to %s\n", argv[2]);
 		}
-	}
-	if (bytes_r < 0)
-	{
-		close(fd_from), close(fd_to);
-		erreur_exit(98, "Error: Can't read from file %s\n", argv[1]);
 	}
 	if (close(fd_from) == -1)
 		(dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from), exit(100));
